@@ -1,6 +1,11 @@
 /* ========================================= */
 /* ZÁKLADNÍ NASTAVENÍ A FONTY */
 /* ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +17,6 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    scroll-behavior: smooth; /* Plynulé scrollování pro odkazy #id */
 }
 
 h1, h2 {
@@ -70,7 +74,7 @@ section {
     /* Místo obrázku (sonic_hero.jpg) použijeme pro ukázku generické pozadí */
     background: 
         linear-gradient(rgba(0, 34, 68, 0.75), rgba(0, 0, 0, 0.8)), 
-        url('https://via.placeholder.com/1920x800/004080/ffffff?text=SONIC+%26+SEGA+HERO') no-repeat center center; 
+        url('resources/cyganskysonic.png') no-repeat center center; 
     background-size: cover;
     height: 90vh; 
     display: flex;
