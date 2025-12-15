@@ -1,0 +1,263 @@
+/* ========================================= */
+/* ZÁKLADNÍ NASTAVENÍ A FONTY */
+/* ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth; /* Plynulé scrollování pro odkazy #id */
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* ========================================= */
+/* NAVIGACE (HEADER) */
+/* ========================================= */
+#menu {
+    background-color: #002244; /* Tmavě modrá/Skoro černá */
+    padding: 15px 0;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#menu nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu nav ul li {
+    margin: 0 20px;
+}
+
+#menu nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#menu nav ul li a:hover {
+    color: #FFD700; /* Zlatá */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* ========================================= */
+/* SEKCIA 1: ÚVOD / HERO */
+/* ========================================= */
+#uvod {
+    /* Místo obrázku (sonic_hero.jpg) použijeme pro ukázku generické pozadí */
+    background: 
+        linear-gradient(rgba(0, 34, 68, 0.75), rgba(0, 0, 0, 0.8)), 
+        url('https://via.placeholder.com/1920x800/004080/ffffff?text=SONIC+%26+SEGA+HERO') no-repeat center center; 
+    background-size: cover;
+    height: 90vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+#uvod h1 {
+    font-size: 5em;
+    color: #FFD700; /* Zlatá */
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+#uvod h2 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#uvod p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+
+/* Tlačítko CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #0088CC; /* SEGA modrá */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button:hover {
+    background-color: #FFD700;
+    color: #002244;
+    transform: translateY(-3px);
+}
+
+/* ========================================= */
+/* SEKCIA 2 & 4: HISTORIE A POSTAVY */
+/* ========================================= */
+h2 {
+    color: #002244;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Historie SEGA */
+#historie {
+    background-color: #FFFFFF;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.history-content article {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    border-left: 3px solid #0088CC; /* Modrá linka pro timeline efekt */
+    transition: background-color 0.3s;
+}
+
+.history-content article:hover {
+    background-color: #e9e9e9;
+}
+
+.history-content h3 {
+    color: #0088CC;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* ========================================= */
+/* SEKCIA 3: KONZOLE (střídavé pozadí) */
+/* ========================================= */
+.alt-bg {
+    background-color: #e9e9e9; /* Světle šedé pozadí */
+}
+
+.console-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.console-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.console-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.console-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    /* Poznámka: Zde je placeholder, použijte skutečné obrázky */
+}
+
+.console-card h3 {
+    color: #002244;
+    margin-bottom: 10px;
+}
+
+/* ========================================= */
+/* SEKCIA 4: POSTAVY */
+/* ========================================= */
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.character-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #E6F3FF; /* Světle modrá pro hrdiny */
+    border: 2px solid #0088CC;
+}
+
+.character-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #002244;
+}
+
+/* Speciální styl pro záporáka */
+.character-card.villain {
+    background-color: #FFE6E6; /* Světle červená/růžová */
+    border: 2px solid #CC0000;
+}
+
+/* ========================================= */
+/* PATIČKA (FOOTER) */
+/* ========================================= */
+#paticka {
+    background-color: #002244; /* Tmavě modrá jako v menu */
+    color: #CCCCCC;
+    padding: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#paticka a {
+    color: #FFD700;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#paticka a:hover {
+    text-decoration: underline;
+}
