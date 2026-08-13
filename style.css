@@ -30,11 +30,9 @@ section {
     text-align: center;
 }
 
-/* ========================================= */
-/* NAVIGACE (HEADER) */
-/* ========================================= */
+
 #menu {
-    background-color: #002244; /* Tmavě modrá/Skoro černá */
+    background-color: #002244;
     padding: 15px 0;
     position: sticky; 
     top: 0;
@@ -67,11 +65,8 @@ section {
     border-radius: 5px;
 }
 
-/* ========================================= */
-/* SEKCIA 1: ÚVOD / HERO */
-/* ========================================= */
 #uvod {
-    /* Místo obrázku (sonic_hero.jpg) použijeme pro ukázku generické pozadí */
+
     background: 
         linear-gradient(rgba(0, 34, 68, 0.75), rgba(0, 0, 0, 0.8)), 
         url('resources/cyganskysonic.png') no-repeat center center; 
@@ -90,7 +85,7 @@ section {
 
 #uvod h1 {
     font-size: 5em;
-    color: #FFD700; /* Zlatá */
+    color: #FFD700;
     margin-bottom: 5px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 }
@@ -109,7 +104,7 @@ section {
 /* Tlačítko CTA */
 .cta-button {
     display: inline-block;
-    background-color: #0088CC; /* SEGA modrá */
+    background-color: #0088CC;
     color: #FFFFFF;
     text-decoration: none;
     padding: 15px 40px;
@@ -127,9 +122,7 @@ section {
     transform: translateY(-3px);
 }
 
-/* ========================================= */
-/* SEKCIA 2 & 4: HISTORIE A POSTAVY */
-/* ========================================= */
+
 h2 {
     color: #002244;
     font-size: 2.5em;
@@ -142,7 +135,7 @@ h2 {
     color: #555;
 }
 
-/* Historie SEGA */
+
 #historie {
     background-color: #FFFFFF;
 }
@@ -159,7 +152,7 @@ h2 {
     flex: 1;
     text-align: left;
     padding: 20px;
-    border-left: 3px solid #0088CC; /* Modrá linka pro timeline efekt */
+    border-left: 3px solid #0088CC;
     transition: background-color 0.3s;
 }
 
@@ -173,11 +166,9 @@ h2 {
     font-size: 1.5em;
 }
 
-/* ========================================= */
-/* SEKCIA 3: KONZOLE (střídavé pozadí) */
-/* ========================================= */
+
 .alt-bg {
-    background-color: #e9e9e9; /* Světle šedé pozadí */
+    background-color: #e9e9e9; 
 }
 
 .console-grid {
@@ -207,7 +198,6 @@ h2 {
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
-    /* Poznámka: Zde je placeholder, použijte skutečné obrázky */
 }
 
 .console-card h3 {
@@ -215,9 +205,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* ========================================= */
-/* SEKCIA 4: POSTAVY */
-/* ========================================= */
+
 .character-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -229,7 +217,7 @@ h2 {
 .character-card {
     padding: 20px;
     border-radius: 8px;
-    background-color: #E6F3FF; /* Světle modrá pro hrdiny */
+    background-color: #E6F3FF;
     border: 2px solid #0088CC;
 }
 
@@ -239,17 +227,13 @@ h2 {
     color: #002244;
 }
 
-/* Speciální styl pro záporáka */
 .character-card.villain {
-    background-color: #FFE6E6; /* Světle červená/růžová */
+    background-color: #FFE6E6;
     border: 2px solid #CC0000;
 }
 
-/* ========================================= */
-/* PATIČKA (FOOTER) */
-/* ========================================= */
 #paticka {
-    background-color: #002244; /* Tmavě modrá jako v menu */
+    background-color: #002244;
     color: #CCCCCC;
     padding: 20px;
     font-size: 0.9em;
